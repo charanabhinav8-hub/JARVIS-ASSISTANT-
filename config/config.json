@@ -1,0 +1,47 @@
+{
+  "assistant": {
+    "name": "JARVIS",
+    "wake_word": "hey jarvis",
+    "voice_speed": 1.0,
+    "voice_volume": 1.0,
+    "language": "en-US"
+  },
+  "voice": {
+    "microphone_index": 0,
+    "sample_rate": 16000,
+    "chunk_size": 1024,
+    "timeout": 10,
+    "phrase_time_limit": 10
+  },
+  "gemini": {
+    "model": "gemini-pro",
+    "temperature": 0.7,
+    "max_output_tokens": 2048
+  },
+  "features": {
+    "voice_input": true,
+    "voice_output": true,
+    "web_search": true,
+    "file_management": true,
+    "email_integration": true,
+    "calendar_integration": true,
+    "system_control": true,
+    "app_control": true
+  },
+  "security": {
+    "require_confirmation": true,
+    "dangerous_commands": [
+      "delete",
+      "uninstall",
+      "format",
+      "shutdown",
+      "restart"
+    ]
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/jarvis.log",
+    "max_size": 10485760,
+    "backup_count": 5
+  }
+}

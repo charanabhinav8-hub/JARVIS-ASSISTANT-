@@ -1,0 +1,59 @@
+{
+  "commands": {
+    "greeting": {
+      "patterns": ["hello", "hi", "hey", "greetings"],
+      "action": "greet_user",
+      "response": "Hello! I'm JARVIS, your personal assistant. How can I help you today?"
+    },
+    "open_application": {
+      "patterns": ["open", "launch", "start"],
+      "action": "open_app",
+      "examples": ["open chrome", "launch notepad", "start spotify"]
+    },
+    "close_application": {
+      "patterns": ["close", "quit", "exit", "stop"],
+      "action": "close_app",
+      "examples": ["close chrome", "quit notepad"]
+    },
+    "file_operation": {
+      "patterns": ["create file", "delete file", "rename file", "move file"],
+      "action": "manage_files",
+      "examples": ["create a file named notes.txt", "delete document.pdf"]
+    },
+    "web_search": {
+      "patterns": ["search", "find", "look up", "google"],
+      "action": "search_web",
+      "examples": ["search for python tutorials", "find restaurants near me"]
+    },
+    "email": {
+      "patterns": ["send email", "email", "mail"],
+      "action": "send_email",
+      "examples": ["send an email to john@example.com"]
+    },
+    "calendar": {
+      "patterns": ["remind", "schedule", "calendar", "appointment"],
+      "action": "manage_calendar",
+      "examples": ["set a reminder for tomorrow at 2 PM"]
+    },
+    "system_info": {
+      "patterns": ["system info", "memory", "disk space", "cpu"],
+      "action": "get_system_info",
+      "examples": ["show system information"]
+    },
+    "weather": {
+      "patterns": ["weather", "temperature", "forecast"],
+      "action": "get_weather",
+      "examples": ["what's the weather today?"]
+    },
+    "time": {
+      "patterns": ["time", "date", "what time", "current time"],
+      "action": "get_time",
+      "examples": ["what time is it?"]
+    },
+    "help": {
+      "patterns": ["help", "what can you do", "capabilities"],
+      "action": "show_help",
+      "response": "I can help you with file management, web search, emails, calendar, and much more!"
+    }
+  }
+}
